@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PageHeader Component Preview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Nunito Sans', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 p-8">
+
+  <!-- Page Title -->
+  <h1 class="text-3xl font-bold text-gray-800 mb-2">Page Header Component</h1>
+  <p class="text-gray-500 mb-8">Standardized header variants for all pages</p>
+
+  <!-- PLAIN HEADER -->
+  <div class="mb-2">
+    <span class="text-xs font-bold text-gray-500 uppercase tracking-wide">Plain Header</span>
+  </div>
+  <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+
+    <!-- Simulated Page Header -->
+    <div class="border-b border-gray-200 px-6 py-4">
+
+      <!-- THE COMPONENT -->
+      <!-- Tokens: font.headings.h1 (28px/600), text.default.heading (slate.900) -->
+      <h1
+        class="h-10 w-full flex items-center text-[28px] font-semibold leading-tight text-[#222222]"
+        style="font-family: 'Nunito Sans', sans-serif;"
+      >
+        Telephony Accounts
+      </h1>
+    </div>
+  </div>
+  <p class="text-xs text-gray-400 mt-2 mb-8">Pages: Reviews, Reports, Moments, Telephony Accounts</p>
+
+
+  <!-- HEADER WITH BUTTON -->
+  <div class="mb-2">
+    <span class="text-xs font-bold text-gray-500 uppercase tracking-wide">Header with Button</span>
+  </div>
+  <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+    
+    <!-- Simulated Page Header with Button -->
+    <div class="border-b border-gray-200 px-6 py-4 flex items-center justify-between">
+      
+      <!-- Page Title -->
+      <h1
+        class="h-10 flex items-center text-[28px] font-semibold leading-tight text-[#222222]"
+        style="font-family: 'Nunito Sans', sans-serif;"
+      >
+        Live Geogrids
+      </h1>
+
+      <!-- Action Button -->
+      <button
+        class="h-10 px-4 bg-[#4285f4] hover:bg-[#3367d6] text-white text-sm font-semibold rounded-md flex items-center gap-2 transition-colors"
+        style="font-family: 'Nunito Sans', sans-serif;"
+      >
+        <span class="text-lg leading-none">+</span>
+        New geogrid
+      </button>
+    </div>
+  </div>
+  <p class="text-xs text-gray-400 mt-2 mb-8">Pages: Incoming Calls, Keywords, Phone Numbers, Blocklist</p>
+
+
+  <!-- CUSTOM HEADER -->
+  <div class="mb-2">
+    <span class="text-xs font-bold text-gray-500 uppercase tracking-wide">Custom Header</span>
+  </div>
+  <div class="mt-8 bg-white rounded-lg shadow-sm overflow-hidden">
+    
+    <div class="border-b border-gray-200 px-6 py-5 flex justify-between items-start">
+      
+      <!-- Left: Title + Status + Synced -->
+      <div>
+        <!-- Page Title -->
+        <h1
+          class="text-[28px] font-semibold leading-tight text-[#222222] mb-1"
+          style="font-family: 'Nunito Sans', sans-serif;"
+        >
+          A1 Garage Door Service
+        </h1>
+
+        <!-- Status Badges -->
+        <div class="flex items-center gap-4 mb-1">
+          <!-- Published Badge -->
+          <span class="flex items-center gap-1.5 text-[14px] text-[#333]">
+            <svg class="w-[18px] h-[18px] text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Published
+          </span>
+          <!-- Verified Badge -->
+          <span class="flex items-center gap-1.5 text-[14px] text-[#333]">
+            <svg class="w-[18px] h-[18px] text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            Verified
+          </span>
+          <!-- More Options -->
+          <button class="w-7 h-7 flex items-center justify-center border border-gray-300 rounded text-gray-500 hover:bg-gray-50">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Synced From -->
+        <div class="flex items-center gap-1 text-[13px] text-gray-500">
+          <span>Synced from</span>
+          <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
+          </svg>
+          <a href="#" class="text-blue-500 hover:underline">syoung%a1garage.com@gtempaccount.com</a>
+        </div>
+      </div>
+
+      <!-- Right: PlaceID -->
+      <div class="text-right pt-9">
+        <div class="text-[12px] text-gray-400 mb-0.5">PlaceID</div>
+        <div class="flex items-center gap-1.5">
+          <span class="text-[14px] text-[#333]">ChIJ1cXoprKpXIYRjvxZtMkUYtw</span>
+          <button class="text-gray-400 hover:text-gray-600">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="text-xs text-gray-400 mt-2 mb-8">Pages: Live Geogrids, Automation</p>
+
+
+  <!-- Measurement Guide -->
+  <div class="mt-8 p-4 bg-white rounded-lg shadow-sm">
+    <h2 class="text-lg font-semibold mb-2">Specs</h2>
+    <ul class="text-sm text-gray-600 space-y-1">
+      <li>Font-size: 28px | Font-weight: 600 (semibold)</li>
+      <li>Color: slate.900 (#222222)</li>
+      <li>Font: Nunito Sans | Alignment: Left, vertically centered</li>
+      <li>Text case: Title Case</li>
+    </ul>
+  </div>
+
+</body>
+</html>

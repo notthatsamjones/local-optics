@@ -1,0 +1,9 @@
+Alright, in my last email I mentioned that I think it'd be smart to build off the tokens of the localytics page, as they seem to be quite controlled and they are are already up and running. I don't have those and I don't have github access to have Claude pull styles the format of the styles you're using today, which limits how specific I can be in my recommendations. 
+
+Here are the general recommendations I can make without github access: 
+
+1. The first thing you need to do color-wise is to simplify your gray color scale, and looking for opportunities to shift to darker grays. I suggest standardizing on slate as shown - all grays pull from this palette. I've made recommendations for borders, disabled text, secondary text, body and headings text. You're over-using light gray text today. Updating body text, including text in tables, to this body text can help. 
+
+2. This is a set of colors close to the new brand blue to meet color contrast requirements. Your blues today are quite bright relative to this set, and when you apply these colors across the board the dashboard will feel a bit more serious. This is not necesssarily a bad thing, but it does make blue elements stand out a bit less vs today. 
+
+3. The first component I recommend updating is the page headers. If you click across pages in Linda.co, you'll notice the height, font-size, font size, capitalization of the headers vary dramatically. This is the largest taxt on any page and it's intended to be the first thing that someone reads when they open a new page, so the inconsistencies are quite noticable. Standardize all elements for the 
